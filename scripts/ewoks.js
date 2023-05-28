@@ -23,7 +23,7 @@ export let options = {
 
 export default function () {
   const response = http.get(
-    "https://iggw-service.giaohangtietkiem.vn/api/v2/package-tracking/get-package?q=525253260",
+    "https://payment-public-dev.api.vinasports.net/api/user/category?platform=6",
     { headers: { Accepts: "application/json" } }
   );
   check(response, { "status is 200": (r) => r.status === 200 });
