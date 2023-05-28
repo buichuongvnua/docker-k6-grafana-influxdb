@@ -23,7 +23,7 @@ export let options = {
 
 export default function () {
   const response = http.get(
-    "https://admin.giaohangtietkiem.vn/khach-hang/services/list-provinces-public",
+    "https://iggw-service.giaohangtietkiem.vn/api/v2/package-tracking/get-package?q=525253260",
     { headers: { Accepts: "application/json" } }
   );
   check(response, { "status is 200": (r) => r.status === 200 });
